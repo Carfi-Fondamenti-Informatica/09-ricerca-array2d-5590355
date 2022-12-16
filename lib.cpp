@@ -1,12 +1,18 @@
-int  fun ( char lista[ 10 ][ 20 ], char nome[ 20 ]){
-  intero io = 0 ;
-  intero j = 0 ;
-  mentre ((j < 19 ) e (i < 10 )) {
-    if (lista[i][j] != nome[j]) {
-      io++;
-      j = 0 ;
-    } else  if (lista[i][j] == nome[j]) {
-      j++;
+
+# include  " lib.h "
+
+bool  cerca ( char lista[ 10 ][ 20 ], int &posizione, char target[]){
+    for ( int i= 0 ;i< 10 ;i++){
+        for ( int j= 0 ;j< 20 ;j++){
+            if (lista[i][j] != target[j]){
+                j = 20 ;
+            } altro {
+              se (j== 19 ){
+                  posizione = io;
+                  restituisce  true ;
+              }
+            }
+        }
     }
-  } restituisce i;
+    restituire  falso ;
 }
