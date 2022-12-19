@@ -1,7 +1,7 @@
 # include  < iostream >
 # include  " lib.h "
-//usando lo  spazio dei nomi  std ;
-#using namespace std;
+usando lo  spazio dei nomi  std ;
+
 int  principale () {
     char lista[ 10 ][ 20 ];
     destinazione char [ 20 ];
